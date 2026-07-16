@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Orange Straw -->
+  <line x1="18" y1="4" x2="21" y2="12" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Green Cup Base -->
+  <path d="M9,10 L23,10 L20,27 C20,29 18.5,30 16,30 C13.5,30 12,29 12,27 Z" fill="#2ECC71"/>
+  <!-- Liquid level accent -->
+  <path d="M10,14 L22,14 L20,27 C20,28.5 18.5,29.5 16,29.5 C13.5,29.5 12,28.5 12,27 Z" fill="#27AE60"/>
+  <!-- Leaf -->
+  <path d="M11,7 C13,5 17,6 17,10 C15,12 11,11 11,7 Z" fill="#1E8449"/>
+</svg>

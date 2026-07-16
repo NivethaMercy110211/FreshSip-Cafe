@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FreshSip Cafe Menu – Browse our full range of fresh juices, smoothies, protein shakes, healthy bowls, salads, sandwiches, and healthy snacks." />
+  <title>Menu – FreshSip Cafe</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-xl" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="ri-leaf-fill"></i></div>
+        <div><span class="brand-name">FreshSip</span><span class="brand-tagline">Juice Bar &amp; Cafe</span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation"><i
+          class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 desktop-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme title="Toggle Theme"><i class="bi bi-moon-fill"
+              data-theme-icon data-icon-dark="bi bi-sun-fill" data-icon-light="bi bi-moon-fill"></i></button>
+          <button class="btn-rtl-toggle" data-toggle-rtl title="Toggle RTL/LTR"><span data-rtl-label
+              style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span></button>
+          <a href="login.html" class="nav-link btn-login-nav ms-2"><i class="bi bi-person-circle me-1"></i> Login</a>
+        </div>
+        <div class="mobile-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme><i class="bi bi-moon-fill" data-theme-icon
+              data-icon-dark="bi bi-sun-fill" data-icon-light="bi bi-moon-fill"></i></button>
+          <button class="btn-rtl-toggle" data-toggle-rtl><span data-rtl-label
+              style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span></button>
+          <a href="login.html" class="nav-link btn-login-nav ms-auto"><i class="bi bi-person-circle me-1"></i> Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner" style="background-image:url('images/banner/menu-banner.png');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-12" data-aos="fade-right">
+          <span class="banner-badge"><i class="ri-restaurant-line me-2"></i> Full Menu</span>
+          <h1 class="banner-title mt-2">Fresh, Vibrant &amp; <span>Nutritious</span> Every Day</h1>
+          <p class="banner-desc">Over 120 menu items crafted from certified organic ingredients. From cold-pressed
+            juices to hearty bowls — every bite and sip is designed to nourish and delight.</p>
+          <nav class="banner-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Menu</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU TABS -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="menu-tabs" data-aos="fade-up">
+        <ul class="nav nav-tabs justify-content-center" id="menuTabs" role="tablist">
+          <li class="nav-item" role="presentation"><button class="nav-link active" id="juices-tab" data-bs-toggle="tab"
+              data-bs-target="#juices" type="button" role="tab" aria-controls="juices" aria-selected="true"><i
+                class="ri-cup-line me-1"></i> Juices</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="smoothies-tab" data-bs-toggle="tab"
+              data-bs-target="#smoothies" type="button" role="tab" aria-controls="smoothies" aria-selected="false"><i
+                class="ri-blaze-line me-1"></i> Smoothies</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="shakes-tab" data-bs-toggle="tab"
+              data-bs-target="#shakes" type="button" role="tab" aria-controls="shakes" aria-selected="false"><i
+                class="ri-flask-line me-1"></i> Protein Shakes</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="bowls-tab" data-bs-toggle="tab"
+              data-bs-target="#bowls" type="button" role="tab" aria-controls="bowls" aria-selected="false"><i
+                class="ri-bowl-line me-1"></i> Bowls</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="salads-tab" data-bs-toggle="tab"
+              data-bs-target="#salads" type="button" role="tab" aria-controls="salads" aria-selected="false"><i
+                class="ri-seedling-line me-1"></i> Salads</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="sandwiches-tab" data-bs-toggle="tab"
+              data-bs-target="#sandwiches" type="button" role="tab" aria-controls="sandwiches" aria-selected="false"><i
+                class="ri-bread-line me-1"></i> Sandwiches</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="snacks-tab" data-bs-toggle="tab"
+              data-bs-target="#snacks" type="button" role="tab" aria-controls="snacks" aria-selected="false"><i
+                class="ri-cookie-line me-1"></i> Snacks</button></li>
+        </ul>
+
+        <div class="tab-content" id="menuTabContent">
+          <!-- JUICES TAB -->
+          <div class="tab-pane fade show active" id="juices" role="tabpanel" aria-labelledby="juices-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/juices/orange-juice.png"
+                      alt="Sunrise Orange Juice" /><span class="img-badge">Bestseller</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">250ml</span><span
+                        class="tag-new">350ml</span></div>
+                    <h5 class="card-title">Sunrise Orange Burst</h5>
+                    <p class="card-text">Fresh Valencia oranges, turmeric, ginger. Rich in Vitamin C. Immune boosting
+                      and energising to start the day perfectly.</p>
+                    <div class="card-footer-custom"><span class="card-price">$5.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="80">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/juices/green-juice.png" alt="Emerald Detox" /><span
+                      class="img-badge">Detox</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">250ml</span><span
+                        class="tag-new">350ml</span></div>
+                    <h5 class="card-title">Emerald Green Detox</h5>
+                    <p class="card-text emerald-text">
+                      <span class="desktop-line">Kale, cucumber, celery, green apple, </span>
+                      <span class="desktop-line">lemon, ginger. The ultimate daily cleanse </span>
+                      <span class="desktop-line">and alkalising juice for whole-body health.</span>
+                    </p>
+                    <div class="card-footer-custom"><span class="card-price">$6.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="160">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/juices/beetroot-juice.png" alt="Ruby Beet Boost" /><span
+                      class="img-badge">Power</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">250ml</span><span
+                        class="tag-hot">Sport</span></div>
+                    <h5 class="card-title">Ruby Red Beet Boost</h5>
+                    <p class="card-text">Beetroot, carrot, apple, ginger, lemon. High in nitrates for enhanced endurance
+                      and post-workout recovery support.</p>
+                    <div class="card-footer-custom"><span class="card-price">$6.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/juices/watermelon-juice.png" alt="Watermelon Mint" /><span
+                      class="img-badge">Summer</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">350ml</span><span
+                        class="tag-new">Seasonal</span></div>
+                    <h5 class="card-title">Watermelon Mint Cooler</h5>
+                    <p class="card-text">Sweet watermelon, lime, spearmint, coconut water. The most hydrating and
+                      refreshing seasonal juice in our collection.</p>
+                    <div class="card-footer-custom"><span class="card-price">$5.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMOOTHIES TAB -->
+          <div class="tab-pane fade" id="smoothies" role="tabpanel" aria-labelledby="smoothies-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/berry-smoothie.png"
+                      alt="Berry Blast Smoothie" /><span class="img-badge">Antioxidant</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-new">Gluten
+                        Free</span></div>
+                    <h5 class="card-title">Purple Power Berry Blend</h5>
+                    <p class="card-text">Acai, blueberry, blackcurrant, banana, oat milk. Loaded with antioxidants for
+                      immunity and cellular health. Naturally sweetened.</p>
+                    <div class="card-footer-custom"><span class="card-price">$8.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/mango-smoothie.png"
+                      alt="Mango Glow Smoothie" /><span class="img-badge">Tropical</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Dairy Free</span><span class="tag-hot">200
+                        Cal</span></div>
+                    <h5 class="card-title">Golden Mango Glow Smoothie</h5>
+                    <p class="card-text">Alphonso mango, turmeric, pineapple, ginger, coconut water, chia seeds.
+                      Brightening and anti-inflammatory with tropical taste.</p>
+                    <div class="card-footer-custom"><span class="card-price">$7.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/protein-shake.png"
+                      alt="Protein Smoothie" /><span class="img-badge">Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">35g Protein</span><span class="tag-hot">Post
+                        Workout</span></div>
+                    <h5 class="card-title">Choco Almond Power Smoothie</h5>
+                    <p class="card-text">Raw cacao, almond butter, banana, vanilla protein, oat milk, dates. Maximum
+                      recovery nutrition in one powerhouse glass.</p>
+                    <div class="card-footer-custom"><span class="card-price">$9.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROTEIN SHAKES TAB -->
+          <div class="tab-pane fade" id="shakes" role="tabpanel" aria-labelledby="shakes-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/choco-recovery.png"
+                      alt="Chocolate Protein Shake" /><span class="img-badge">30g Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-hot">Post Workout</span><span
+                        class="tag-fresh">Muscle Gain</span></div>
+                    <h5 class="card-title">Dark Choco Recovery Shake</h5>
+                    <p class="card-text">Whey or plant protein, raw cacao, banana, almond milk, MCT oil. 30g protein,
+                      380 calories. Perfect post-workout recovery.</p>
+                    <div class="card-footer-custom"><span class="card-price">$10.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/vanilla-berry.png"
+                      alt="Vanilla Berry Shake" /><span class="img-badge">28g Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Lean</span><span class="tag-new">Gluten
+                        Free</span></div>
+                    <h5 class="card-title">Vanilla Berry Lean Shake</h5>
+                    <p class="card-text">Vanilla whey, mixed berries, Greek yogurt, honey. 28g protein, 290 calories.
+                      Ideal for lean muscle building and weight management.</p>
+                    <div class="card-footer-custom"><span class="card-price">$9.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/smoothies/tropical-vegan.png"
+                      alt="Tropical Vegan Shake" /><span class="img-badge">Vegan</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Plant Protein</span><span class="tag-hot">25g
+                        Protein</span></div>
+                    <h5 class="card-title">Tropical Vegan Protein Shake</h5>
+                    <p class="card-text">Pea protein, mango, pineapple, coconut milk, flaxseed. 25g plant protein, 320
+                      calories. Perfect for vegan athletes and active lifestyles.</p>
+                    <div class="card-footer-custom"><span class="card-price">$10.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOWLS TAB -->
+          <div class="tab-pane fade" id="bowls" role="tabpanel" aria-labelledby="bowls-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/breakfast-shine.png" alt="Acai Power Bowl" /><span
+                      class="img-badge">Superfood</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-new">450
+                        Cal</span></div>
+                    <h5 class="card-title">Acai Power Bowl</h5>
+                    <p class="card-text">Wild acai base topped with granola, banana, berries, coconut flakes, honey, and
+                      edible flowers. A feast for the eyes and body.</p>
+                    <div class="card-footer-custom"><span class="card-price">$12.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/lunch-power.png" alt="Quinoa Grain Bowl" /><span
+                      class="img-badge">High Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">GF</span><span class="tag-hot">520 Cal</span>
+                    </div>
+                    <h5 class="card-title">Mediterranean Quinoa Bowl</h5>
+                    <p class="card-text">Quinoa, roasted chickpeas, cucumber, cherry tomatoes, feta, olives, hummus,
+                      tahini dressing. A complete balanced meal.</p>
+                    <div class="card-footer-custom"><span class="card-price">$13.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/breakfast-starter.png"
+                      alt="Mango Yogurt Bowl" /><span class="img-badge">Probiotic</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegetarian</span><span class="tag-new">380
+                        Cal</span></div>
+                    <h5 class="card-title">Golden Mango Granola Bowl</h5>
+                    <p class="card-text">Greek yogurt, fresh mango, honey granola, chia seeds, mango coulis, mint.
+                      Probiotic-rich with natural sweetness and crunch.</p>
+                    <div class="card-footer-custom"><span class="card-price">$11.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SALADS TAB -->
+          <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/lunch-vegan.png" alt="Super Green Salad" /><span
+                      class="img-badge">Detox</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-new">220
+                        Cal</span></div>
+                    <h5 class="card-title">Super Green Power Salad</h5>
+                    <p class="card-text">Spinach, kale, broccoli, edamame, avocado, pumpkin seeds, and zesty lemon
+                      tahini dressing. Alkalising, clean, and deeply nutritious feed.</p>
+                    <div class="card-footer-custom"><span class="card-price">$11.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/tropical-monday-madness.png"
+                      alt="Watermelon Feta Salad" /><span class="img-badge">Summer</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegetarian</span><span class="tag-hot">280
+                        Cal</span></div>
+                    <h5 class="card-title">Watermelon Feta Mint Salad</h5>
+                    <p class="card-text">Seasonal watermelon, feta cheese, rocket, red onion, mint, balsamic glaze.
+                      Light, refreshing, and absolutely stunning to look at.</p>
+                    <div class="card-footer-custom"><span class="card-price">$10.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/lunch-mediterranean.png"
+                      alt="Protein Salad" /><span class="img-badge">Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">GF</span><span class="tag-hot">380 Cal</span>
+                    </div>
+                    <h5 class="card-title">Grilled Chicken Power Salad</h5>
+                    <p class="card-text">Grilled free-range chicken, romaine, avocado, cherry tomatoes, quinoa, soft
+                      egg, house dressing. A full, satisfying protein-rich meal.</p>
+                    <div class="card-footer-custom"><span class="card-price">$13.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SANDWICHES TAB -->
+          <div class="tab-pane fade" id="sandwiches" role="tabpanel" aria-labelledby="sandwiches-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/breakfast-ritual.png" alt="Avocado Toast" /><span
+                      class="img-badge">Bestseller</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegetarian</span><span class="tag-new">420
+                        Cal</span></div>
+                    <h5 class="card-title">Smashed Avocado Toast Deluxe</h5>
+                    <p class="card-text">Toasted organic sourdough, creamy smashed avocado, poached egg, cherry
+                      tomatoes, microgreens, chilli flakes, and everything seasoning.</p>
+                    <div class="card-footer-custom"><span class="card-price">$10.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/fitness-recovery.png" alt="Chicken Wrap" /><span
+                      class="img-badge">High Protein</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-hot">520 Cal</span><span class="tag-fresh">GF
+                        option</span></div>
+                    <h5 class="card-title">Grilled Chicken Avocado Wrap</h5>
+                    <p class="card-text">Spiced grilled chicken, avocado, mixed greens, jalapeño, cheddar, sriracha mayo
+                      in a whole-wheat tortilla. Bold and satisfying.</p>
+                    <div class="card-footer-custom"><span class="card-price">$11.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/office-boost.png"
+                      alt="Beet Hummus Sandwich" /><span class="img-badge">Vegan</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-new">380
+                        Cal</span></div>
+                    <h5 class="card-title">Roasted Beet Hummus Ciabatta</h5>
+                    <p class="card-text">Roasted beetroot, house-made hummus, rocket, cucumber, pine nuts, lemon zest on
+                      toasted ciabatta. Vibrant and flavour-packed.</p>
+                    <div class="card-footer-custom"><span class="card-price">$9.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SNACKS TAB -->
+          <div class="tab-pane fade" id="snacks" role="tabpanel" aria-labelledby="snacks-tab">
+            <div class="row g-4 equal-cards-row">
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/office-wellness.png" alt="Energy Bar" /><span
+                      class="img-badge">Raw</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-new">180
+                        Cal</span></div>
+                    <h5 class="card-title">Cacao Berry Energy Bar</h5>
+                    <p class="card-text">Dates, oats, raw cacao, mixed berries, chia, coconut oil. No baking, no
+                      preservatives, no refined sugar. Pure energy.</p>
+                    <div class="card-footer-custom"><span class="card-price">$3.99</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="80">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/summer-berry-blast-trio.png"
+                      alt="Mango Coconut Bites" /><span class="img-badge">Tropical</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">GF</span><span class="tag-hot">160 Cal</span>
+                    </div>
+                    <h5 class="card-title">Mango Coconut Bliss Bites</h5>
+                    <p class="card-text">Fresh mango, desiccated coconut, cashews, lime zest, agave. Hand-rolled and
+                      chilled. A tropical treat in two bites.</p>
+                    <div class="card-footer-custom"><span class="card-price">$4.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="160">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/breakfast-starter.png" alt="Granola Cup" /><span
+                      class="img-badge">Fresh Daily</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegetarian</span><span class="tag-new">240
+                        Cal</span></div>
+                    <h5 class="card-title">Honey Nut Granola Cup</h5>
+                    <p class="card-text">House-made granola with almonds, walnuts, oats, honey, cinnamon, served with
+                      coconut yogurt and a fresh berry compote.</p>
+                    <div class="card-footer-custom"><span class="card-price">$5.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="240">
+                <div class="card-uniform">
+                  <div class="card-img-wrap"><img src="images/combos/fitness-friday-power-deal.png"
+                      alt="Kale Chips" /><span class="img-badge">Guilt Free</span></div>
+                  <div class="card-body-custom">
+                    <div class="d-flex gap-2 mb-2"><span class="tag-fresh">Vegan</span><span class="tag-hot">85
+                        Cal</span></div>
+                    <h5 class="card-title">Crispy Kale Chips</h5>
+                    <p class="card-text">Oven-crisped organic kale with nutritional yeast, sea salt, smoked paprika.
+                      Addictively crunchy and packed with nutrients.</p>
+                    <div class="card-footer-custom"><span class="card-price">$3.49</span><button
+                        class="btn-primary-custom" style="font-size:0.8rem;padding:8px 16px!important;"><i
+                          class="ri-add-line"></i> Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRITIONAL INFO BANNER -->
+  <section class="section-py-sm nutrition-info-banner"
+    style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));">
+    <div class="container">
+      <div class="row g-4 align-items-center text-center text-md-start">
+        <div class="col-md-8" data-aos="fade-right">
+          <h3 style="color:#fff;font-weight:800;margin-bottom:8px;">All Nutritional Information Available</h3>
+          <p style="color:rgba(255,255,255,0.82);margin:0;">Every menu item includes full calorie counts, macros,
+            allergen information, and dietary tags. We believe in complete transparency.</p>
+        </div>
+        <div class="col-md-4 text-md-end" data-aos="fade-left">
+          <a href="contact.html" class="btn-white-custom"><i class="ri-information-line"></i> Request Full Nutrition
+            Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLERGEN INFO -->
+  <section class="section-py bg-surface-2">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-shield-check-line me-1"></i> Dietary Info</span>
+        <h2 class="section-title mt-2">Dietary &amp; Allergen Guide</h2>
+        <p class="section-subtitle mt-3">We cater to all dietary requirements. All our team members are trained in
+          allergen awareness and food safety.</p>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-leaf-fill" style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Vegan</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="60">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-seedling-fill"
+              style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Vegetarian</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-shield-check-fill"
+              style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Gluten Free</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="180">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-drop-fill" style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Dairy Free</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-heart-pulse-fill"
+              style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Nut Free</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-center p-3 rounded-3"
+            style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <i class="ri-medal-fill" style="font-size:1.8rem;color:var(--primary);display:block;margin-bottom:8px;"></i>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-heading);">Organic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SUPERFOOD BOOSTERS SECTION ===================== -->
+  <section class="section-py bg-surface boosters-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge badge-logo-green"><i class="ri-pulse-line me-1"></i> Supercharge Your Cup</span>
+        <h2 class="section-title mt-2">Functional Superfood Boosters</h2>
+        <p class="section-subtitle mt-3">Add any of our active wellness booster shots to your juice or smoothie for an
+          extra nutritional kick.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Booster 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+          <div class="text-center p-4 rounded-4 h-100 shadow-sm"
+            style="background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <div class="icon-wrap mx-auto mb-3"
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+              <i class="ri-fire-line"></i>
+            </div>
+            <h5 class="fw-bold mb-1" style="font-size: 0.95rem; color: var(--text-heading); line-height: 1.25;">
+              Ginger<br />Shot</h5>
+            <span class="badge bg-light text-muted mb-2">+$1.00</span>
+            <p class="mb-0 text-muted" style="font-size: 0.78rem; line-height: 1.5;">Enhances circulation, improves
+              digestion, and boosts immune cell response.</p>
+          </div>
+        </div>
+
+        <!-- Booster 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="60">
+          <div class="text-center p-4 rounded-4 h-100 shadow-sm"
+            style="background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <div class="icon-wrap mx-auto mb-3"
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+              <i class="ri-sun-line"></i>
+            </div>
+            <h5 class="fw-bold mb-1" style="font-size: 0.95rem; color: var(--text-heading); line-height: 1.25;">
+              Turmeric<br />Shot</h5>
+            <span class="badge bg-light text-muted mb-2">+$1.00</span>
+            <p class="mb-0 text-muted" style="font-size: 0.78rem; line-height: 1.5;">Powerful natural anti-inflammatory
+              filled with healing antioxidants.</p>
+          </div>
+        </div>
+
+        <!-- Booster 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="120">
+          <div class="text-center p-4 rounded-4 h-100 shadow-sm"
+            style="background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <div class="icon-wrap mx-auto mb-3"
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+              <i class="ri-leaf-line"></i>
+            </div>
+            <h5 class="fw-bold mb-1" style="font-size: 0.95rem; color: var(--text-heading); line-height: 1.25;">
+              Blue<br />Spirulina</h5>
+            <span class="badge bg-light text-muted mb-2">+$1.50</span>
+            <p class="mb-0 text-muted" style="font-size: 0.78rem; line-height: 1.5;">Nutrient-dense super-algae packed
+              with cellular repair properties.</p>
+          </div>
+        </div>
+
+        <!-- Booster 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="180">
+          <div class="text-center p-4 rounded-4 h-100 shadow-sm"
+            style="background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <div class="icon-wrap mx-auto mb-3"
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+              <i class="ri-seedling-line"></i>
+            </div>
+            <h5 class="fw-bold mb-1" style="font-size: 0.95rem; color: var(--text-heading); line-height: 1.25;">
+              Chia<br />Seeds</h5>
+            <span class="badge bg-light text-muted mb-2">+$0.80</span>
+            <p class="mb-0 text-muted" style="font-size: 0.78rem; line-height: 1.5;">Rich in Omega-3 fatty acids, plant
+              fiber, and slow-burn stamina energy.</p>
+          </div>
+        </div>
+
+        <!-- Booster 5 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="240">
+          <div class="text-center p-4 rounded-4 h-100 shadow-sm"
+            style="background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <div class="icon-wrap mx-auto mb-3"
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+              <i class="ri-blaze-line"></i>
+            </div>
+            <h5 class="fw-bold mb-1" style="font-size: 0.95rem; color: var(--text-heading); line-height: 1.25;">
+              Whey<br />Protein</h5>
+            <span class="badge bg-light text-muted mb-2">+$1.50</span>
+            <p class="mb-0 text-muted" style="font-size: 0.78rem; line-height: 1.5;">Adds 20g of pure grass-fed whey
+              protein to build active lean muscle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background-image:url('images/cta/menu-cta.png');">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="cta-title">Hungry for <span>Fresh</span> &amp; Healthy?</h2>
+        <p class="cta-desc mx-auto">Visit our cafe today or enquire about catering for your next event. Every meal is
+          made
+          with care and the finest ingredients.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="combos.html" class="btn-primary-custom"><i class="ri-gift-line"></i> View Combo Deals</a>
+          <a href="contact.html" class="btn-white-custom"><i class="ri-map-pin-line"></i> Find Our Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <a class="footer-brand-link" href="index.html">
+              <div class="brand-logo-footer"><i class="ri-leaf-fill"></i></div>
+              <div>
+                <span class="brand-name">FreshSip</span>
+                <span class="brand-tagline">Juice Bar &amp; Cafe</span>
+              </div>
+            </a>
+            <p>Your daily destination for cold-pressed juices, vibrant smoothies, and wholesome snacks crafted with
+              love.</p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="menu.html"><i class="ri-arrow-right-s-line"></i> Our Menu</a></li>
+            <li><a href="combos.html"><i class="ri-arrow-right-s-line"></i> Combos</a></li>
+            <li><a href="catering.html"><i class="ri-arrow-right-s-line"></i> Catering</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Opening Hours</h5>
+          <ul class="footer-hours">
+            <li><span class="day">Mon – Fri</span><span class="time">7am – 9pm</span></li>
+            <li><span class="day">Saturday</span><span class="time">8am – 10pm</span></li>
+            <li><span class="day">Sunday</span><span class="time">9am – 8pm</span></li>
+            <li><span class="day">Public Hols</span><span class="time">10am – 6pm</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact-info">
+            <li><i class="ri-map-pin-line"></i><span>12 Garden Street, Greenville</span></li>
+            <li><i class="ri-phone-line"></i><span>+44 20 7123 4567</span></li>
+            <li><i class="ri-mail-line"></i><span>hello@freshsipcafe.co.uk</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Stay Updated</h5>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:16px;">Subscribe for seasonal specials and
+            exclusive offers.</p>
+          <form class="footer-newsletter newsletter-form">
+            <div class="d-flex"><input type="email" placeholder="Your email address" required
+                aria-label="Email" /><button type="submit" class="btn-subscribe"><i
+                  class="ri-send-plane-fill"></i></button></div>
+            <p class="mt-2">No spam, ever.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>&copy; 2025 FreshSip Cafe. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Back to Top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="lightbox-overlay" id="galleryLightbox">
+    <button class="lightbox-close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <img class="lightbox-img" src="" alt="Gallery" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

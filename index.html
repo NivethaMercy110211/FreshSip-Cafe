@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FreshSip Cafe – Your premium juice bar and healthy snack cafe. Discover fresh cold-pressed juices, smoothies, protein shakes, healthy bowls, and more." />
+  <title>FreshSip Cafe – Fresh Juices & Healthy Snacks</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-xl" id="mainNavbar">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="ri-leaf-fill"></i></div>
+        <div>
+          <span class="brand-name">FreshSip</span>
+          <span class="brand-tagline">Juice Bar &amp; Cafe</span>
+        </div>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4"></i>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Desktop controls -->
+        <div class="d-flex align-items-center gap-2 desktop-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme title="Toggle Theme">
+            <i class="bi bi-moon-fill" data-theme-icon data-icon-dark="bi bi-sun-fill"
+              data-icon-light="bi bi-moon-fill"></i>
+          </button>
+          <button class="btn-rtl-toggle" data-toggle-rtl title="Toggle RTL/LTR">
+            <span data-rtl-label style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span>
+          </button>
+          <a href="login.html" class="nav-link btn-login-nav ms-2">
+            <i class="bi bi-person-circle me-1"></i> Login
+          </a>
+        </div>
+
+        <!-- Mobile extras (inside collapse) -->
+        <div class="mobile-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme title="Toggle Theme">
+            <i class="bi bi-moon-fill" data-theme-icon data-icon-dark="bi bi-sun-fill"
+              data-icon-light="bi bi-moon-fill"></i>
+          </button>
+          <button class="btn-rtl-toggle" data-toggle-rtl title="Toggle RTL/LTR">
+            <span data-rtl-label style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span>
+          </button>
+          <a href="login.html" class="nav-link btn-login-nav ms-auto">
+            <i class="bi bi-person-circle me-1"></i> Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ===================== END NAVBAR ===================== -->
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero-home1 position-relative overflow-hidden"
+    style="min-height:calc(100vh - var(--navbar-height)); display:flex; align-items:flex-start;">
+    <!-- Background image via inline style -->
+    <div class="hero-bg-layer position-absolute inset-0 w-100 h-100" style="
+    background-image: url('images/hero/home1-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    inset: 0;
+  "></div>
+    <!-- Overlay -->
+    <div class="position-absolute w-100 h-100"
+      style="background:linear-gradient(135deg,rgba(10,30,15,0.88) 0%,rgba(30,132,73,0.55) 55%,rgba(10,30,15,0.82) 100%); inset:0; z-index:1;">
+    </div>
+
+    <div class="container position-relative" style="z-index:2; padding-top:56px; padding-bottom:56px;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <span class="banner-badge"><i class="ri-leaf-fill me-2"></i> 100% Fresh &amp; Organic</span>
+          <h1 class="banner-title mt-2 mb-4">
+            Sip Fresh,<br>
+            <span>Live Healthy</span><br>
+            Every Day
+          </h1>
+          <p class="banner-desc">
+            Cold-pressed juices, vibrant smoothies, and wholesome snacks crafted from the freshest seasonal ingredients.
+            Your daily dose of nutrition, delivered with flavour.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="menu.html" class="btn-primary-custom">
+              <i class="ri-restaurant-line"></i> Explore Menu
+            </a>
+            <a href="combos.html" class="btn-white-custom">
+              <i class="ri-gift-line"></i> View Combos
+            </a>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="d-flex flex-wrap gap-4 mt-5 pt-2">
+            <div>
+              <div class="fw-800 text-white" style="font-size:1.8rem; font-weight:900;" data-counter="120"
+                data-suffix="+">0+</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.65);">Fresh Items</div>
+            </div>
+            <div style="width:1px; background:rgba(255,255,255,0.2);"></div>
+            <div>
+              <div class="fw-800 text-white" style="font-size:1.8rem; font-weight:900;" data-counter="15000"
+                data-suffix="+">0+</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.65);">Happy Customers</div>
+            </div>
+            <div style="width:1px; background:rgba(255,255,255,0.2);"></div>
+            <div>
+              <div class="fw-800 text-white" style="font-size:1.8rem; font-weight:900;" data-counter="4.9"
+                data-suffix="★">0</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.65);">Avg. Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-none d-lg-block hero-home1-secondary" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="position-relative">
+            <img src="images/hero/home1-hero.png" alt="Fresh Juices at FreshSip Cafe" class="rounded-4 shadow-lg w-100"
+              style="height:480px; object-fit:cover; border: 4px solid rgba(255,255,255,0.15);" />
+            <!-- Floating cards -->
+            <div class="position-absolute bg-white rounded-3 shadow p-3 d-flex align-items-center gap-3"
+              style="bottom:30px; left:-20px; min-width:200px;">
+              <div
+                style="width:44px; height:44px; background:linear-gradient(135deg,#2ECC71,#27AE60); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.2rem; flex-shrink:0;">
+                <i class="ri-leaf-fill"></i>
+              </div>
+              <div>
+                <div style="font-size:0.78rem; color:#6B7C73; font-weight:600;">Today's Special</div>
+                <div style="font-size:0.9rem; font-weight:800; color:#0D2015;">Green Detox Blend</div>
+              </div>
+            </div>
+            <div class="position-absolute bg-white rounded-3 shadow p-3" style="top:30px; right:-20px;">
+              <div class="d-flex align-items-center gap-2">
+                <div style="color:#F39C12; font-size:0.85rem;">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div style="font-size:0.8rem; font-weight:700; color:#0D2015; margin-top:4px;">4.9/5 Rating</div>
+              <div style="font-size:0.72rem; color:#6B7C73;">15,000+ Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POPULAR FRESH JUICES ===================== -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-cup-line me-1"></i> Our Bestsellers</span>
+        <h2 class="section-title mt-2">Popular Fresh Juices</h2>
+        <p class="section-subtitle mt-3">Every glass is cold-pressed within minutes of your order. No preservatives, no
+          added sugar — just pure, vibrant nutrition.</p>
+      </div>
+
+      <div class="row g-4 equal-cards-row popular-juices-grid">
+        <!-- Juice Card 1 -->
+        <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-uniform">
+            <div class="card-img-wrap">
+              <img src="images/juices/orange-juice.png" alt="Fresh Orange Juice" />
+              <span class="img-badge">Bestseller</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <span class="tag-fresh">Cold Pressed</span>
+                <span class="tag-hot">250 Cal</span>
+              </div>
+              <h5 class="card-title">Sunrise Orange<br class="tablet-only-break" /> Burst</h5>
+              <p class="card-text">Fresh-squeezed Valencia<br class="tablet-only-break" /> oranges blended with a hint<br class="tablet-only-break" /> of turmeric and ginger for a<br class="tablet-only-break" />
+                powerful immune<br class="tablet-only-break" /> boost.</p>
+              <div class="card-footer-custom">
+                <span class="card-price">$5.99</span>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">
+                  <i class="ri-add-line"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juice Card 2 -->
+        <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-uniform">
+            <div class="card-img-wrap">
+              <img src="images/juices/green-juice.png" alt="Green Detox Juice" />
+              <span class="img-badge">Detox</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <span class="tag-fresh">Cold Pressed</span>
+                <span class="tag-fresh">180 Cal</span>
+              </div>
+              <h5 class="card-title">Emerald Green<br class="tablet-only-break" /> Detox</h5>
+              <p class="card-text">Kale, cucumber, celery, green apple, and fresh ginger — the ultimate cleansing juice
+                for everyday wellness.</p>
+              <div class="card-footer-custom">
+                <span class="card-price">$6.49</span>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">
+                  <i class="ri-add-line"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juice Card 3 -->
+        <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-uniform">
+            <div class="card-img-wrap">
+              <img src="images/juices/beetroot-juice.png" alt="Beetroot Juice" />
+              <span class="img-badge">Power Boost</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <span class="tag-fresh">Cold Pressed</span>
+                <span class="tag-hot">210 Cal</span>
+              </div>
+              <h5 class="card-title">Ruby Red Beet<br class="tablet-only-break" /> Boost</h5>
+              <p class="card-text">Earthy beetroot, sweet carrot, tart lemon, and revitalising ginger — designed to fuel
+                your performance.</p>
+              <div class="card-footer-custom">
+                <span class="card-price">$6.99</span>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">
+                  <i class="ri-add-line"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juice Card 4 -->
+        <div class="col-md-6 col-lg-3 card-col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-uniform">
+            <div class="card-img-wrap">
+              <img src="images/juices/watermelon-juice.png" alt="Watermelon Juice" />
+              <span class="img-badge">Summer Fresh</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <span class="tag-fresh">Cold Pressed</span>
+                <span class="tag-new">Seasonal</span>
+              </div>
+              <h5 class="card-title">Watermelon Mint<br class="tablet-only-break" /> Cooler</h5>
+              <p class="card-text">Sweet summer watermelon with fresh lime and spearmint — the most refreshing drink of
+                the season.</p>
+              <div class="card-footer-custom">
+                <span class="card-price">$5.49</span>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">
+                  <i class="ri-add-line"></i> Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="menu.html" class="btn-outline-custom">
+          <i class="ri-restaurant-line me-1"></i> View Full Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HEALTHY SNACK CATEGORIES ===================== -->
+  <section class="section-py bg-surface-2">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-plant-line me-1"></i> Eat Right</span>
+        <h2 class="section-title mt-2">Healthy Snack Categories</h2>
+        <p class="section-subtitle mt-3">From energising bowls to wholesome sandwiches — every bite is designed to
+          nourish your body and delight your taste buds.</p>
+      </div>
+
+      <div class="row g-4 snack-category-grid">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-bowl-line"></i></div>
+            <h4>Acai Bowls</h4>
+            <p>Superfood bowls<br />packed with<br />antioxidants</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="80">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-bread-line"></i></div>
+            <h4>Sandwiches</h4>
+            <p>Wholesome wraps<br />with fresh<br />ingredients</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-seedling-line"></i></div>
+            <h4>Salads</h4>
+            <p>Garden fresh salads<br />with house<br />dressings</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-cake-2-line"></i></div>
+            <h4>Protein Bars</h4>
+            <p>Handmade energy<br />bars for active<br />lifestyles</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="320">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-restaurant-2-line"></i></div>
+            <h4>Grain Bowls</h4>
+            <p>Hearty bowls<br class="tablet-only-break" /> with<br />ancient grains and<br />veggies</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-card text-center">
+            <div class="icon-wrap"><i class="ri-leaf-line"></i></div>
+            <h4>Healthy Snacks</h4>
+            <p>Guilt-free<br class="tablet-only-break" /> bites<br />for any time of<br />day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE FRESHSIP ===================== -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="img-overlay-wrap">
+            <img src="images/hero/about-hero.png" alt="FreshSip Cafe Interior"
+              style="height:500px; object-fit:cover;" />
+            <div class="img-gradient-overlay"></div>
+            <div class="position-absolute bottom-0 start-0 p-4 home-image-stats" style="z-index:2;">
+              <div class="d-flex gap-3">
+                <div class="bg-white rounded-3 p-3 text-center shadow">
+                  <div style="font-size:1.6rem; font-weight:900; color:#2ECC71;" data-counter="8" data-suffix="+">0+
+                  </div>
+                  <div style="font-size:0.72rem; color:#6B7C73; font-weight:600;">Years<br />Serving</div>
+                </div>
+                <div class="bg-white rounded-3 p-3 text-center shadow">
+                  <div style="font-size:1.6rem; font-weight:900; color:#2ECC71;" data-counter="100" data-suffix="%">0%
+                  </div>
+                  <div style="font-size:0.72rem; color:#6B7C73; font-weight:600;">Organic<br />Items</div>
+                </div>
+                <div class="bg-white rounded-3 p-3 text-center shadow">
+                  <div style="font-size:1.6rem; font-weight:900; color:#2ECC71;" data-counter="50" data-suffix="+">0+
+                  </div>
+                  <div style="font-size:0.72rem; color:#6B7C73; font-weight:600;">Menu<br />Items</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <span class="section-badge"><i class="ri-shield-check-line me-1"></i> Our Promise</span>
+          <h2 class="section-title mt-2 mb-4">Why Choose <span style="color:var(--primary);">FreshSip</span>?</h2>
+          <div class="row g-3 why-choose-grid">
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-leaf-fill"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">100% Organic<br class="tablet-only-break" /> Ingredients</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Sourced from certified organic farms,
+                    fresh every morning.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-timer-line"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Made Fresh<br class="tablet-only-break" /> to Order</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Every drink is prepared fresh when you
+                    order — never pre-bottled.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-heart-pulse-line"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Nutritionist<br class="tablet-only-break" /> Approved</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Every recipe reviewed by certified
+                    nutritionists for optimal health.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-truck-line"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Fast Catering<br class="tablet-only-break" /> Delivery</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Corporate catering and office delivery
+                    available city-wide.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-recycle-line"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Eco-Friendly<br class="tablet-only-break" /> Packaging</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">All packaging is 100% biodegradable and
+                    responsibly sourced.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 align-items-start p-3 rounded-3" style="background:var(--bg-surface-2);">
+                <div
+                  style="width:46px;height:46px;background:linear-gradient(135deg,#EAFAF1,#D5F5E3);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#27AE60;font-size:1.2rem;flex-shrink:0;">
+                  <i class="ri-price-tag-3-line"></i>
+                </div>
+                <div>
+                  <h5 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Affordable &amp;<br class="tablet-only-break" /> Transparent</h5>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Premium quality at honest prices — no
+                    hidden costs ever.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SEASONAL SPECIALS ===================== -->
+  <section class="section-py bg-surface-2 seasonal-specials-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-sun-line me-1"></i> Limited Time</span>
+        <h2 class="section-title mt-2">Seasonal Specials</h2>
+        <p class="section-subtitle mt-3">Our seasonal menu celebrates the best nature has to offer each month. Fresh,
+          exciting, and only available while supplies last.</p>
+      </div>
+
+      <div class="row g-4 equal-cards-row">
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-uniform" style="border-top:3px solid var(--primary);">
+            <div class="card-img-wrap">
+              <img src="images/smoothies/berry-smoothie.png" alt="Summer Berry Blast Smoothie" />
+              <span class="img-badge">Limited</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="tag-hot mb-2 d-inline-block">Summer Special</span>
+              <h5 class="card-title">Summer Berry Blast</h5>
+              <p class="card-text seasonal-berry-text">
+                <span class="desktop-line">A vibrant medley of strawberries, </span>
+                <span class="desktop-line">blueberries, raspberries, and acai, blended </span>
+                <span class="desktop-line">with coconut water for peak summer hydration.</span>
+              </p>
+              <div class="card-footer-custom">
+                <div>
+                  <span class="card-price">$7.99</span>
+                  <span class="text-muted text-decoration-line-through ms-2" style="font-size:0.82rem;">$9.99</span>
+                </div>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">Order
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="120">
+          <div class="card-uniform" style="border-top:3px solid var(--primary);">
+            <div class="card-img-wrap">
+              <img src="images/smoothies/mango-smoothie.png" alt="Tropical Mango Fiesta" />
+              <span class="img-badge">Trending</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="tag-new mb-2 d-inline-block">New Arrival</span>
+              <h5 class="card-title">Tropical Mango Fiesta</h5>
+              <p class="card-text">
+                <span class="desktop-line">Alphonso mango, pineapple, passionfruit, </span>
+                <span class="desktop-line">and a splash of fresh lime juice — </span>
+                <span class="desktop-line">your tropical escape in every sip.</span>
+              </p>
+              <div class="card-footer-custom">
+                <div>
+                  <span class="card-price">$6.99</span>
+                  <span class="text-muted text-decoration-line-through ms-2" style="font-size:0.82rem;">$8.49</span>
+                </div>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">Order
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="240">
+          <div class="card-uniform" style="border-top:3px solid var(--primary);">
+            <div class="card-img-wrap">
+              <img src="images/smoothies/protein-shake.png" alt="Winter Wellness Shake" />
+              <span class="img-badge">Wellness</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="tag-fresh mb-2 d-inline-block">Staff Favourite</span>
+              <h5 class="card-title">Autumn Spiced Shake</h5>
+              <p class="card-text">
+                <span class="desktop-line">Cinnamon, nutmeg, banana, vanilla </span>
+                <span class="desktop-line">protein, and oat milk — the perfect </span>
+                <span class="desktop-line">post-workout warming shake.</span>
+              </p>
+              <div class="card-footer-custom">
+                <div>
+                  <span class="card-price">$8.49</span>
+                  <span class="text-muted text-decoration-line-through ms-2" style="font-size:0.82rem;">$10.99</span>
+                </div>
+                <button class="btn-primary-custom py-2 px-3" style="font-size:0.8rem; padding:8px 16px!important;">Order
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CUSTOMER REVIEWS ===================== -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-chat-quote-line me-1"></i> Testimonials</span>
+        <h2 class="section-title mt-2">What Our Customers Say</h2>
+        <p class="section-subtitle mt-3">Over 15,000 happy customers and counting. Hear their stories.</p>
+      </div>
+
+      <div class="row g-4 equal-cards-row reviews-grid">
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="0">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">"FreshSip has completely transformed my morning routine. The Green Detox juice is
+              absolutely incredible — so fresh and energising. I cannot imagine starting my day without it!"</p>
+            <div class="review-author">
+              <img src="images/testimonials/sarah.png" alt="Sarah Mitchell" class="review-author-avatar" />
+              <div class="review-author-info">
+                <div class="name">Sarah Mitchell</div>
+                <div class="role">Wellness Coach, London</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">"We used FreshSip for our company's quarterly event — the catering team was
+              professional, punctual, and the food was stunning. Every colleague raved about it for weeks!"</p>
+            <div class="review-author">
+              <img src="images/testimonials/james.png" alt="James Thornton" class="review-author-avatar" />
+              <div class="review-author-info">
+                <div class="name">James Thornton</div>
+                <div class="role">Operations Manager, TechCorp</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 card-col" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="review-text">"The Watermelon Mint Cooler is pure summer in a glass. I visit FreshSip three times a
+              week and the quality is consistently outstanding. Highly recommend the family combos!"</p>
+            <div class="review-author">
+              <img src="images/testimonials/priya.png" alt="Priya Sharma" class="review-author-avatar" />
+              <div class="review-author-info">
+                <div class="name">Priya Sharma</div>
+                <div class="role">Nutritionist &amp; Food Blogger</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OUR PROCESS SECTION ===================== -->
+  <section class="section-py bg-surface-2 position-relative overflow-hidden">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge badge-logo-green"><i class="ri-refresh-line me-1"></i> Our Process</span>
+        <h2 class="section-title mt-2">From Farm to Glass</h2>
+        <p class="section-subtitle mt-3">We believe in complete transparency. Here is how your daily dose of wellness is crafted.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="icon-card text-center p-4 h-100 position-relative" style="border: 1px solid var(--border-color); background: var(--bg-card); transition: all 0.3s ease;">
+            <div class="process-step-num position-absolute top-0 end-0 m-3" style="font-size: 3rem; font-weight: 900; color: var(--primary); opacity: 0.15; font-style: italic;">01</div>
+            <div class="icon-wrap mx-auto mb-4" style="width: 70px; height: 70px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2rem;">
+              <i class="ri-plant-line"></i>
+            </div>
+            <h4 class="mb-3" style="font-weight: 700; color: var(--text-heading);">1. Hand-Picked Sourcing</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">Our organic fruits and vegetables are harvested at peak ripeness from certified local partners and arrive at our cafe before dawn.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-card text-center p-4 h-100 position-relative" style="border: 1px solid var(--border-color); background: var(--bg-card); transition: all 0.3s ease;">
+            <div class="process-step-num position-absolute top-0 end-0 m-3" style="font-size: 3rem; font-weight: 900; color: var(--primary); opacity: 0.15; font-style: italic;">02</div>
+            <div class="icon-wrap mx-auto mb-4" style="width: 70px; height: 70px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2rem;">
+              <i class="ri-temp-cold-line"></i>
+            </div>
+            <h4 class="mb-3" style="font-weight: 700; color: var(--text-heading);">2. Cold-Press Extraction</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">Using advanced hydraulic presses, we extract juice without generating heat or friction, preserving 100% of live enzymes and nutrients.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-card text-center p-4 h-100 position-relative" style="border: 1px solid var(--border-color); background: var(--bg-card); transition: all 0.3s ease;">
+            <div class="process-step-num position-absolute top-0 end-0 m-3" style="font-size: 3rem; font-weight: 900; color: var(--primary); opacity: 0.15; font-style: italic;">03</div>
+            <div class="icon-wrap mx-auto mb-4" style="width: 70px; height: 70px; border-radius: 50%; background: var(--primary-pale); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2rem;">
+              <i class="ri-cup-line"></i>
+            </div>
+            <h4 class="mb-3" style="font-weight: 700; color: var(--text-heading);">3. Zero-Delay Serving</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">Never heated, never pasteurized,<br class="tablet-only-break" />and free of additives. We bottle<br class="tablet-only-break" />and serve our juices immediately<br class="tablet-only-break" />to guarantee absolute freshness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="cta-section" style="background-image:url('images/cta/home1-cta.png');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <h2 class="cta-title">Ready to <span>Sip Fresh</span> Today?</h2>
+          <p class="cta-desc">Explore our full menu, plan your next office catering event, or just drop in for your
+            daily dose of healthy goodness.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="menu.html" class="btn-primary-custom">
+              <i class="ri-restaurant-line"></i> Order Now
+            </a>
+            <a href="catering.html" class="btn-white-custom">
+              <i class="ri-building-2-line"></i> Enquire Catering
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="cta-stat-item">
+                <div class="stat-number" data-counter="120" data-suffix="+">0+</div>
+                <div class="stat-number-label" style="display:none;">Fresh Menu Items</div>
+                <div class="stat-label">Fresh Menu Items</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cta-stat-item">
+                <div class="stat-number" data-counter="15000" data-suffix="+">0+</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cta-stat-item">
+                <div class="stat-number" data-counter="8" data-suffix=" Yrs">0</div>
+                <div class="stat-label">In<br />Business</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cta-stat-item">
+                <div class="stat-number" data-counter="100" data-suffix="%">0%</div>
+                <div class="stat-label">Organic Produce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <a class="footer-brand-link" href="index.html">
+              <div class="brand-logo-footer"><i class="ri-leaf-fill"></i></div>
+              <div>
+                <span class="brand-name">FreshSip</span>
+                <span class="brand-tagline">Juice Bar &amp; Cafe</span>
+              </div>
+            </a>
+            <p>Your daily destination for cold-pressed juices, vibrant smoothies, and wholesome snacks crafted with love
+              and the freshest organic ingredients.</p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="menu.html"><i class="ri-arrow-right-s-line"></i> Our Menu</a></li>
+            <li><a href="combos.html"><i class="ri-arrow-right-s-line"></i> Combos</a></li>
+            <li><a href="gallery.html"><i class="ri-arrow-right-s-line"></i> Gallery</a></li>
+            <li><a href="catering.html"><i class="ri-arrow-right-s-line"></i> Catering</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Opening Hours</h5>
+          <ul class="footer-hours">
+            <li><span class="day">Mon – Fri</span><span class="time">7am – 9pm</span></li>
+            <li><span class="day">Saturday</span><span class="time">8am – 10pm</span></li>
+            <li><span class="day">Sunday</span><span class="time">9am – 8pm</span></li>
+            <li><span class="day">Public Hols</span><span class="time">10am – 6pm</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact-info">
+            <li><i class="ri-map-pin-line"></i><span>12 Garden Street, Greenville, GV1 4RF, United Kingdom</span></li>
+            <li><i class="ri-phone-line"></i><span>+44 20 7123 4567</span></li>
+            <li><i class="ri-mail-line"></i><span>hello@freshsipcafe.co.uk</span></li>
+            <li><i class="ri-global-line"></i><span>www.freshsipcafe.co.uk</span></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Stay Updated</h5>
+          <p style="font-size:0.83rem; color:var(--text-muted); margin-bottom:16px;">Subscribe for seasonal specials,
+            new menu drops, and exclusive member offers.</p>
+          <form class="footer-newsletter newsletter-form">
+            <div class="d-flex">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+              <button type="submit" class="btn-subscribe"><i class="ri-send-plane-fill"></i></button>
+            </div>
+            <p class="mt-2">No spam, ever. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>&copy; 2025 FreshSip Cafe. All rights reserved. Crafted with <i class="ri-heart-fill"
+                style="color:#2ECC71;"></i> for a healthier world.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <p>
+              <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+              <a href="#">Terms of Service</a> &nbsp;|&nbsp;
+              <a href="#">Cookie Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" title="Back to Top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Gallery Lightbox -->
+  <div class="lightbox-overlay" id="galleryLightbox">
+    <button class="lightbox-close" aria-label="Close lightbox"><i class="bi bi-x-lg"></i></button>
+    <img class="lightbox-img" src="" alt="Gallery Image" />
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FreshSip Cafe Gallery – Explore our juice gallery, smoothie shots, cafe interior, food photography, customer moments, and video highlights." />
+  <title>Gallery – FreshSip Cafe</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-xl" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="ri-leaf-fill"></i></div>
+        <div><span class="brand-name">FreshSip</span><span class="brand-tagline">Juice Bar &amp; Cafe</span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation"><i
+          class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 desktop-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme title="Toggle Theme"><i class="bi bi-moon-fill"
+              data-theme-icon data-icon-dark="bi bi-sun-fill" data-icon-light="bi bi-moon-fill"></i></button>
+          <button class="btn-rtl-toggle" data-toggle-rtl title="RTL/LTR"><span data-rtl-label
+              style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span></button>
+          <a href="login.html" class="nav-link btn-login-nav ms-2"><i class="bi bi-person-circle me-1"></i> Login</a>
+        </div>
+        <div class="mobile-nav-extras">
+          <button class="btn-theme-toggle" data-toggle-theme><i class="bi bi-moon-fill" data-theme-icon
+              data-icon-dark="bi bi-sun-fill" data-icon-light="bi bi-moon-fill"></i></button>
+          <button class="btn-rtl-toggle" data-toggle-rtl><span data-rtl-label
+              style="font-weight: 700; font-size: 0.72rem; letter-spacing: 0.5px;">RTL</span></button>
+          <a href="login.html" class="nav-link btn-login-nav ms-auto"><i class="bi bi-person-circle me-1"></i> Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <section class="page-banner" style="background-image:url('images/banner/gallery-banner.png');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-12" data-aos="fade-right">
+          <span class="banner-badge"><i class="ri-camera-line me-2"></i> Visual Showcase</span>
+          <h1 class="banner-title mt-2">A Visual Feast of <span>Fresh</span> &amp; Vibrant</h1>
+          <p class="banner-desc">Explore the vibrant world of FreshSip through our gallery — from artisanal juice
+            photography to our welcoming cafe interior and customer stories.</p>
+          <nav class="banner-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Gallery</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JUICE GALLERY -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-cup-line me-1"></i> Juices</span>
+        <h2 class="section-title mt-2">Juice Gallery</h2>
+        <p class="section-subtitle mt-3">Every glass tells a colourful story. Our cold-pressed juices are as beautiful
+          as they are nutritious.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="0">
+          <img src="images/juices/orange-juice.png" alt="Fresh Orange Juice" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Sunrise Orange Burst</h5>
+              <p>Cold-pressed Valencia oranges with ginger &amp; turmeric</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="80">
+          <img src="images/juices/green-juice.png" alt="Green Detox Juice" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Emerald Green Detox</h5>
+              <p>Kale, cucumber, celery, green apple &amp; lemon</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="160">
+          <img src="images/juices/beetroot-juice.png" alt="Beetroot Juice" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Ruby Red Beet Boost</h5>
+              <p>Beetroot, carrot, ginger &amp; lemon</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="240">
+          <img src="images/juices/watermelon-juice.png" alt="Watermelon Juice" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Watermelon Mint Cooler</h5>
+              <p>Watermelon, lime, spearmint &amp; coconut water</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="320">
+          <img src="images/gallery/juice-rainbow.png" alt="Juice Bar Collection" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>The Full Juice Rainbow</h5>
+              <p>Our complete fresh-pressed juice collection</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="zoom-in" data-aos-delay="400">
+          <img src="images/gallery/juice-spread.png" alt="Menu Juice Spread" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Juice &amp; Bowl Spread</h5>
+              <p>Our full menu beautifully styled for photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMOOTHIE GALLERY -->
+  <section class="section-py bg-surface-2">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-blaze-line me-1"></i> Smoothies</span>
+        <h2 class="section-title mt-2">Smoothie Gallery</h2>
+        <p class="section-subtitle mt-3">Thick, vibrant, and stunningly beautiful — our signature smoothies are a feast
+          for the eyes and the body.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:3/4;">
+            <img src="images/smoothies/berry-smoothie.png" alt="Berry Smoothie" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Purple Power Berry Blend</h5>
+                <p>Acai, blueberry, blackcurrant &amp; banana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="120">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:3/4;">
+            <img src="images/smoothies/mango-smoothie.png" alt="Mango Smoothie" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Golden Mango Glow</h5>
+                <p>Alphonso mango, turmeric &amp; pineapple</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="240">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:3/4;">
+            <img src="images/smoothies/protein-shake.png" alt="Protein Shake" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Choco Almond Power</h5>
+                <p>Raw cacao, almond butter &amp; banana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAFE INTERIOR -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-store-line me-1"></i> Our Space</span>
+        <h2 class="section-title mt-2">Cafe Interior</h2>
+        <p class="section-subtitle mt-3">Step inside FreshSip — a space designed to inspire health, creativity, and
+          connection.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:16/10;">
+            <img src="images/gallery/interior-main.png" alt="FreshSip Cafe Interior Main" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Main Cafe Area</h5>
+                <p>Our welcoming open-plan cafe with herb garden wall</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:16/10;">
+            <img src="images/gallery/interior-counter.png" alt="Juice Bar Counter" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Juice Bar Counter</h5>
+                <p>Our open-plan juice preparation station</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="160">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:16/10;">
+            <img src="images/gallery/interior-seating.png" alt="Cafe Seating Area" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Seating &amp; Workspace</h5>
+                <p>Comfortable seating for dining and remote work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="240">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:16/10;">
+            <img src="images/gallery/interior-detail.png" alt="Cafe Details &amp; Plants" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Greenery &amp; Decor</h5>
+                <p>Lush indoor plants and cozy lighting details</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER MOMENTS -->
+  <section class="section-py bg-surface-2">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-heart-line me-1"></i> Community</span>
+        <h2 class="section-title mt-2">Customer Moments</h2>
+        <p class="section-subtitle mt-3">Real moments, real customers, real happiness. Tag us on social media and you
+          might be featured here.</p>
+      </div>
+      <div class="gallery-grid customer-moments-grid">
+        <div class="gallery-item" data-lightbox data-aos="fade-up" data-aos-delay="0">
+          <img src="images/gallery/moment-customer.png" alt="Happy Customer" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Juice Bar Moments</h5>
+              <p>Our customers love sharing their FreshSip experience</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="fade-up" data-aos-delay="80">
+          <img src="images/gallery/moment-event.png" alt="Catering Event" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Corporate Event</h5>
+              <p>FreshSip catering for a tech company team day</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-aos="fade-up" data-aos-delay="160">
+          <img src="images/gallery/moment-combo.png" alt="Combo Meal Moments" />
+          <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <h5>Combo Deal Happiness</h5>
+              <p>Customers sharing their favourite combo deals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Social CTA -->
+      <div class="text-center mt-5" data-aos="fade-up">
+        <p class="mb-3" style="color:var(--text-muted);font-size:0.9rem;">Share your FreshSip moment on Instagram and
+          tag us for a chance to be featured</p>
+        <a href="#" class="btn-primary-custom">
+          <i class="fab fa-instagram me-2"></i> @FreshSipCafe
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD PHOTOGRAPHY -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-camera-3-line me-1"></i> Food Art</span>
+        <h2 class="section-title mt-2">Food Photography</h2>
+        <p class="section-subtitle mt-3">Beautiful food deserves beautiful photography. Our menu items, styled and shot
+          by professional food photographers.</p>
+      </div>
+      <div class="row g-3 food-photography-grid">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/breakfast-shine.png" alt="Rise and Shine Bowl" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Rise &amp; Shine Bowl</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="60">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/breakfast-ritual.png" alt="Green Morning Ritual" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Green Morning Ritual</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="120">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/breakfast-starter.png" alt="Grab and Go Fruit Cup" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Grab &amp; Go Fruit Cup</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="180">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/lunch-power.png" alt="Protein Grain Bowl" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Protein Grain Bowl</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/lunch-mediterranean.png" alt="Mediterranean Salad" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Mediterranean Salad</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/lunch-vegan.png" alt="Plant Power Salad" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Plant Power Salad</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="360">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/summer-berry-blast-trio.png" alt="Summer Berry Trio" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Summer Berry Trio</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="420">
+          <div class="gallery-item" data-lightbox style="aspect-ratio:1/1;">
+            <img src="images/combos/tropical-monday-madness.png" alt="Tropical Fruit Bowl" />
+            <div class="gallery-zoom-btn"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h5>Tropical Fruit Bowl</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO GALLERY -->
+  <section class="section-py bg-surface-2">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="ri-play-circle-line me-1"></i> Watch &amp; Explore</span>
+        <h2 class="section-title mt-2">Video Gallery</h2>
+        <p class="section-subtitle mt-3">Watch our team craft your favourite drinks, explore our cafe, and see why
+          thousands of customers love FreshSip.</p>
+      </div>
+      <div class="row g-4 video-gallery-grid">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="video-thumb">
+            <img src="images/hero/home1-hero.png" alt="Juice Making Process Video" />
+            <div class="video-play-btn">
+              <div class="play-icon"><i class="bi bi-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h5 style="font-size:0.95rem;font-weight:700;color:var(--text-heading);">Cold-Press Juice Making</h5>
+            <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Watch our juice masters cold-press fresh
+              ingredients every morning</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+          <div class="video-thumb">
+            <img src="images/hero/home2-hero.png" alt="Smoothie Bowl Making" />
+            <div class="video-play-btn">
+              <div class="play-icon"><i class="bi bi-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h5 style="font-size:0.95rem;font-weight:700;color:var(--text-heading);">Signature Smoothie Bowl Art</h5>
+            <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Behind the scenes of our beautiful<br class="tablet-only-break" /> smoothie
+              bowl creations</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="240">
+          <div class="video-thumb">
+            <img src="images/hero/catering-hero.png" alt="Catering Event Video" />
+            <div class="video-play-btn">
+              <div class="play-icon"><i class="bi bi-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h5 style="font-size:0.95rem;font-weight:700;color:var(--text-heading);">Corporate Catering in Action</h5>
+            <p style="font-size:0.82rem;color:var(--text-muted);margin:0;">See how we transform office events with fresh
+              healthy catering</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#" class="btn-outline-custom"><i class="fab fa-youtube me-2"></i> View More on YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THE ART OF PRESSING SECTION ===================== -->
+  <section class="section-py bg-surface">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge badge-logo-green"><i class="ri-camera-lens-line me-1"></i> Behind the Lens</span>
+        <h2 class="section-title mt-2">The Art of Pressing</h2>
+        <p class="section-subtitle mt-3">A visual story of how our master juicers prepare daily raw nutrients.</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="img-overlay-wrap">
+            <img src="images/gallery/juice-rainbow.png" alt="Juice Rainbow" style="height:400px; object-fit:cover;" class="w-100 rounded-4 shadow" />
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <span class="section-badge"><i class="ri-heart-pulse-fill me-1"></i> Pure Craftsmanship</span>
+          <h3 class="mt-2 mb-3" style="font-weight: 800; color: var(--text-heading);">Nourishing Colors, Natural Beauty</h3>
+          <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem; margin-bottom: 24px;">Our photography isn't just about display — it represents the raw, unaltered colors of organic nature. No filters, no synthetic dyes, and no fake enhancements. The vivid green of our kale, the deep crimson of our beetroot, and the sun-yellow of our ginger are captured exactly as they flow from our hydraulic press.</p>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 text-heading fw-bold" style="font-size: 0.9rem;">
+                <i class="ri-checkbox-circle-fill text-success fs-5"></i> 100% Real Pigments
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 text-heading fw-bold" style="font-size: 0.9rem;">
+                <i class="ri-checkbox-circle-fill text-success fs-5"></i> No Added Preservatives
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 text-heading fw-bold" style="font-size: 0.9rem;">
+                <i class="ri-checkbox-circle-fill text-success fs-5"></i> Fresh Daily Squeeze
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2 text-heading fw-bold" style="font-size: 0.9rem;">
+                <i class="ri-checkbox-circle-fill text-success fs-5"></i> Local Farms Sourced
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background-image:url('images/cta/gallery-cta.png');">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="cta-title">Like What You <span>See</span>?</h2>
+        <p class="cta-desc mx-auto">Visit FreshSip in person and experience the colours, flavours, and energy for
+          yourself. Or order online and bring the freshness to you.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="menu.html" class="btn-primary-custom"><i class="ri-restaurant-line"></i> Explore Our Menu</a>
+          <a href="contact.html" class="btn-white-custom"><i class="ri-map-pin-line"></i> Visit the Cafe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <a class="footer-brand-link" href="index.html">
+              <div class="brand-logo-footer"><i class="ri-leaf-fill"></i></div>
+              <div>
+                <span class="brand-name">FreshSip</span>
+                <span class="brand-tagline">Juice Bar &amp; Cafe</span>
+              </div>
+            </a>
+            <p>Your daily destination for cold-pressed juices, vibrant smoothies, and wholesome snacks crafted with
+              love.</p>
+            <div class="footer-socials">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="menu.html"><i class="ri-arrow-right-s-line"></i> Our Menu</a></li>
+            <li><a href="gallery.html"><i class="ri-arrow-right-s-line"></i> Gallery</a></li>
+            <li><a href="catering.html"><i class="ri-arrow-right-s-line"></i> Catering</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Opening Hours</h5>
+          <ul class="footer-hours">
+            <li><span class="day">Mon – Fri</span><span class="time">7am – 9pm</span></li>
+            <li><span class="day">Saturday</span><span class="time">8am – 10pm</span></li>
+            <li><span class="day">Sunday</span><span class="time">9am – 8pm</span></li>
+            <li><span class="day">Public Hols</span><span class="time">10am – 6pm</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact-info">
+            <li><i class="ri-map-pin-line"></i><span>12 Garden Street, Greenville</span></li>
+            <li><i class="ri-phone-line"></i><span>+44 20 7123 4567</span></li>
+            <li><i class="ri-mail-line"></i><span>hello@freshsipcafe.co.uk</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Stay Updated</h5>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:16px;">Subscribe for gallery updates and
+            exclusive content.</p>
+          <form class="footer-newsletter newsletter-form">
+            <div class="d-flex"><input type="email" placeholder="Your email address" required
+                aria-label="Email" /><button type="submit" class="btn-subscribe"><i
+                  class="ri-send-plane-fill"></i></button></div>
+            <p class="mt-2">No spam, ever.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>&copy; 2025 FreshSip Cafe. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Back to Top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="lightbox-overlay" id="galleryLightbox">
+    <button class="lightbox-close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <img class="lightbox-img" src="" alt="Gallery Image" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
