@@ -1116,7 +1116,9 @@ img {
 }
 
 .kofi-copy-ipad,
-.kofi-copy-desktop {
+.kofi-copy-desktop,
+.kofi-copy-ipadpro,
+.tom-copy-ipad {
   display: none;
 }
 
@@ -3358,8 +3360,7 @@ img {
 
   .kofi-review-text {
     min-height: 5.25em;
-    line-height: 1.55 !important;
-    letter-spacing: 0;
+    line-height: 1.75 !important;
   }
 
   .kofi-review-text .tablet-line {
@@ -3876,8 +3877,8 @@ img {
   }
 
   .reviews-grid .kofi-review-text {
-    line-height: 1.55 !important;
-    min-height: 5.25em;
+    line-height: 1.75 !important;
+    min-height: 7em;
   }
 
   .kofi-review-text .desktop-line {
@@ -3891,26 +3892,61 @@ img {
   }
 }
 
-/* ---- TABLET ONLY REVIEW ALIGNMENT OVERRIDES ---- */
-@media (min-width: 768px) and (max-width: 1199.98px) {
+/* ---- TABLET ONLY REVIEW ALIGNMENT OVERRIDES (768px - 991.98px) ---- */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .reviews-grid .kofi-copy-default,
-  .reviews-grid .kofi-copy-desktop {
+  .reviews-grid .kofi-copy-desktop,
+  .reviews-grid .kofi-copy-ipadpro,
+  .reviews-grid .tom-copy-default {
     display: none !important;
   }
 
-  .reviews-grid .kofi-copy-ipad {
+  .reviews-grid .kofi-copy-ipad,
+  .reviews-grid .tom-copy-ipad {
     display: block !important;
     max-width: 100%;
   }
 
-  .reviews-grid .kofi-copy-ipad .kofi-line {
+  .reviews-grid .kofi-copy-ipad .kofi-line,
+  .reviews-grid .tom-copy-ipad .kofi-line {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .reviews-grid .kofi-review-text,
+  .reviews-grid .tom-review-text {
+    line-height: 1.75 !important;
+    max-width: 100%;
+    min-height: 8.75em;
+  }
+}
+
+/* ---- IPAD PRO ONLY REVIEW ALIGNMENT OVERRIDES (992px - 1199.98px) ---- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .reviews-grid .kofi-copy-default,
+  .reviews-grid .kofi-copy-desktop,
+  .reviews-grid .kofi-copy-ipad {
+    display: none !important;
+  }
+
+  .reviews-grid .kofi-copy-ipadpro {
+    display: block !important;
+    max-width: 100%;
+  }
+
+  .reviews-grid .kofi-copy-ipadpro .kofi-line {
     display: block !important;
     white-space: nowrap !important;
   }
 
   .reviews-grid .kofi-review-text {
-    line-height: 1.55 !important;
+    line-height: 1.75 !important;
     max-width: 100%;
+    min-height: 5.25em !important;
+  }
+
+  .reviews-grid .review-card {
+    padding: 32px 18px !important;
   }
 }
 
@@ -3947,12 +3983,4 @@ img {
     flex: 0 0 50% !important;
     max-width: 50% !important;
   }
-}
-
-/* ---- SEASONAL SPECIALS SECTION BACKGROUND ---- */
-.seasonal-specials-section {
-  background-image: linear-gradient(rgba(249, 251, 249, 0.92), rgba(249, 251, 249, 0.92)), url('../images/cta/seasonal-bg.png') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
 }
