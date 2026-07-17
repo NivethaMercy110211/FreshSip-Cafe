@@ -223,7 +223,7 @@ img {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .navbar-brand .brand-logo {
@@ -732,6 +732,27 @@ img {
 
 .card-uniform:hover .card-img-wrap img {
   transform: scale(1.06);
+}
+
+.ingredient-card-img {
+  width: calc(100% + 48px);
+  max-width: none;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  display: block;
+  margin: -24px -24px 18px;
+  background: rgba(35, 204, 121, 0.12);
+}
+
+.booster-card-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+  background: var(--primary-pale);
 }
 
 .card-uniform .card-body-custom {
@@ -3729,7 +3750,7 @@ img {
 .footer-brand-link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   margin-bottom: 20px;
   text-decoration: none !important;
 }
@@ -3855,13 +3876,20 @@ img {
 .boosters-section p {
   min-height: 6.0em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.boosters-section .booster-line {
+  display: block;
+  white-space: nowrap;
+}
+
 /* ---- DESKTOP ONLY ALIGNMENT OVERRIDES ---- */
 @media (min-width: 1200px) {
+
   .reviews-grid .kofi-copy-default,
   .reviews-grid .kofi-copy-ipad {
     display: none !important;
@@ -3894,6 +3922,7 @@ img {
 
 /* ---- TABLET ONLY REVIEW ALIGNMENT OVERRIDES (768px - 991.98px) ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
   .reviews-grid .kofi-copy-default,
   .reviews-grid .kofi-copy-desktop,
   .reviews-grid .kofi-copy-ipadpro,
@@ -3923,6 +3952,7 @@ img {
 
 /* ---- IPAD PRO ONLY REVIEW ALIGNMENT OVERRIDES (992px - 1199.98px) ---- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
   .reviews-grid .kofi-copy-default,
   .reviews-grid .kofi-copy-desktop,
   .reviews-grid .kofi-copy-ipad {
@@ -3959,6 +3989,7 @@ img {
 
 /* ---- ORGANIC KALE & COMBO MEALS ALIGNMENT (1024px iPad Pro ONLY) ---- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
   .kale-desc .kale-line-1-2,
   .kale-desc .kale-line-2 {
     display: block;
@@ -3979,7 +4010,7 @@ img {
     max-width: 20% !important;
   }
 
-  .site-footer .row > [class*="col-"] {
+  .site-footer .row>[class*="col-"] {
     flex: 0 0 50% !important;
     max-width: 50% !important;
   }
