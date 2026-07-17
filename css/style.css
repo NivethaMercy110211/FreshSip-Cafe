@@ -745,14 +745,37 @@ img {
   background: rgba(35, 204, 121, 0.12);
 }
 
+.booster-card {
+  --booster-card-padding: 24px;
+  padding: var(--booster-card-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+  .booster-card {
+    --booster-card-padding: 16px;
+  }
+}
+
 .booster-card-img {
-  width: 56px;
-  height: 56px;
+  width: calc(100% + (2 * var(--booster-card-padding)));
+  max-width: none;
+  height: 140px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 16px 16px 0 0;
   display: block;
-  margin: 0 auto 16px;
+  margin-top: calc(-1 * var(--booster-card-padding));
+  margin-left: calc(-1 * var(--booster-card-padding));
+  margin-right: calc(-1 * var(--booster-card-padding));
+  margin-bottom: 18px;
   background: var(--primary-pale);
+}
+
+@media (min-width: 576px) {
+  .booster-card-img {
+    height: 120px;
+  }
 }
 
 .card-uniform .card-body-custom {
